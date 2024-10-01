@@ -1,0 +1,7 @@
+---
+- name: deploy tailscale
+  hosts: nodes
+  become: true
+  become_user: root
+  roles:
+  - role: ansible-role-tailscale
